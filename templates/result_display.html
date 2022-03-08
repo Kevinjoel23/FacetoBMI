@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+    <h4>The BMI predicted from the given image is:</h4>
+    <h4> {{ context.bmi}} </h4>
+    <h4>Body fat percentage calculated is:</h4>
+    <h4> {{ context.fat }}</h4>
+    <br>
+
+    <a href="{% url 'home' %}" class = "btn btn-sm">Go Back</a>
+  </body>
+</html>
