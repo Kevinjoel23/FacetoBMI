@@ -7,4 +7,4 @@ class ImageForm(forms.ModelForm):
 
     class Meta:
         model = BMI_model
-        fields = ['age', 'gender', 'image']
+        fields = ['name', 'phone_number', 'email', 'age', 'gender', 'image']

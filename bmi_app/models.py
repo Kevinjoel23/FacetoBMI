@@ -6,6 +6,9 @@ GENDER_CHOICES = (
     (1, 'female'),
 )
 class BMI_model(models.Model):
+    name = models.CharField(max_length=50, null=True, blank= True)
+    phone_number = models.IntegerField(default=0)
+    email = models.EmailField(null=True, max_length=255)
     age = models.IntegerField()
     gender = models.IntegerField(choices=GENDER_CHOICES)
     image = models.ImageField(upload_to='images/')
